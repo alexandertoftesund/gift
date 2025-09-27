@@ -1,0 +1,27 @@
+const plane = document.querySelector(".plane");
+const giftBox = document.querySelector(".gift-box");
+const giftBoxTop = document.querySelector(".gift-box__top");
+const giftBoxBottom = document.querySelector(".gift-box__bottom");
+const gift1 = document.querySelector(".gift-1");
+const gift2 = document.querySelector(".gift-2");
+
+const animateBox = () => {
+
+    giftBox.classList.add("gift-box__open");
+
+    setTimeout(() => {
+
+            gift1.classList.add("show");
+
+    }, 1500);
+
+    setTimeout(() => {
+
+            gift2.classList.add("show");
+
+    }, 3000);
+
+}
+
+giftBox.addEventListener("click", animateBox);
+
