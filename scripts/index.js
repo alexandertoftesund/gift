@@ -4,6 +4,15 @@ const giftBoxTop = document.querySelector(".gift-box__top");
 const giftBoxBottom = document.querySelector(".gift-box__bottom");
 const gift1 = document.querySelector(".gift-1");
 const gift2 = document.querySelector(".gift-2");
+const intro = document.querySelector(".intro");
+
+const init = () => {
+    setTimeout(() => {
+
+            intro.classList.add("hide");
+
+    }, 3000);
+}
 
 const animateBox = () => {
 
@@ -25,3 +34,4 @@ const animateBox = () => {
 
 giftBox.addEventListener("click", animateBox);
 
+init();
