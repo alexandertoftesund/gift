@@ -64,6 +64,30 @@ body {
     animation: planeLeft 8s infinite linear;
 }
 
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 2s infinite ease-in-out;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+.arrow h1 {
+    color: rgb(255, 204, 0);
+    font-size: large;
+}
+
+.fa-arrow-down {
+    font-size: 32px;
+    color: rgb(255, 204, 0);
+    filter: drop-shadow(0 0 2px black);
+}
+
 .gift-box {
     position: fixed;
     top: 50%;
@@ -135,7 +159,7 @@ body {
 
 .gift h1 {
     position: fixed;
-    top: -18px;
+    top: -20px;
     font-size: small;
     font-weight: bold;
     color: rgb(255, 204, 0);
@@ -206,7 +230,7 @@ body {
 
 @keyframes fromBoxLeft {
     0% {
-        transform: translate(50%, 100%) scale(0);
+        transform: translate(50%, 220%) scale(0);
     }
     100% {
         transform: translate(0%, 0%) scale(1);
@@ -215,7 +239,7 @@ body {
 
 @keyframes fromBoxRight{
     0% {
-        transform: translate(-50%, 100%) scale(0);
+        transform: translate(-50%, 220%) scale(0);
     }
     100% {
         transform: translate(0%, 0%) scale(1);
@@ -228,5 +252,14 @@ body {
     }
     100% {
         filter: opacity(1);
+    }
+}
+
+@keyframes bounce{
+    0%, 100% {
+        transform: translate(0%, 10%);
+    }
+    50% {
+        transform: translate(-0%, -10%);
     }
 }
