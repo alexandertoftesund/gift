@@ -20,11 +20,11 @@ const animateBox = () => {
 
     setTimeout(() => {
             gift1.classList.add("show");
-    }, 1500);
+    }, 2000);
 
     setTimeout(() => {
             gift2.classList.add("show");
-    }, 3000);
+    }, 4500);
 
 }
 
